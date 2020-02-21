@@ -1,0 +1,7 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": ["../lib/index"],
+  "ignore": ["node_modules"],
+  "sourceMaps": "inline",
+  "retainLines": true
+}
