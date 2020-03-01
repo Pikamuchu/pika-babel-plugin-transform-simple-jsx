@@ -29,17 +29,16 @@ In your `.babelrc`:
 
 The plugin transpiles the following E4X code:
 
-``` xml
+``` js
 const fooId = 'foo-id';
 const barText = 'bar text';
 
-let xml = (
-  <xml>
-    <foo id={fooId}>{barText}</foo>
-  </xml>
+const html = (
+  <div>
+    <span id={fooId}>{barText}</span>
+  </div>
 );
 
-xml += <var id="var-id"/>;
 ```
 
 To the following JavaScript:
@@ -50,7 +49,7 @@ var JSX = require("simple-jsx");
 var fooId = 'foo-id';
 var barText = 'bar text';
 
-var xml = JSX("<div><span id=\"" + (fooId) + "\">" + (barText) + "</span></div>");
+var html = JSX("<div><span id=\"" + (fooId) + "\">" + (barText) + "</span></div>");
 
 ```
 
