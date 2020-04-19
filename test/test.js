@@ -86,5 +86,16 @@ describe('babel-plugin-transform-simple-jsx', () => {
         </sales>
       );
     });
+
+    it('fragments', () => {
+      const fragment = (
+        <JSX.fragment>
+          <div>foo</div>
+          <div>bar</div>
+        </JSX.fragment>
+      );
+
+      assert.equal(fragment, '<div>foo</div><div>bar</div>');
+    });
   });
 });
