@@ -14,7 +14,7 @@
     "babel-loader": "^8.0.4",
     "babel-plugin-transform-simple-jsx": "^1.0.1",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.10.3"
   }
 }
